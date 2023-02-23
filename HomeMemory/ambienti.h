@@ -2,6 +2,9 @@
 #define AMBIENTI_H
 
 #include <QWidget>
+#include <QStackedLayout>
+#include <QPushButton>
+#include <QScrollArea>
 
 class Ambienti : public QWidget
 {
@@ -10,5 +13,11 @@ class Ambienti : public QWidget
 public:
     Ambienti(QWidget *parent = nullptr);
     ~Ambienti();
+
+private slots:
+    void setstack(QScrollArea *srollA, QStackedLayout *stack);
+
+private:
+    QPushButton *casaBtn;
 };
 #endif // AMBIENTI_H

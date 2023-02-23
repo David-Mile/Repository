@@ -34,7 +34,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">
     <ClCompile>
-      <AdditionalIncludeDirectories>&quot;C:\Users\miglio\OneDrive - TXT e-solutions S.p.A\Documents\GitHub\Repository\HomeMemory\release\qmake\temp&quot;;C:\Qt\5.11.1\msvc2017_64\include;C:\Qt\5.11.1\msvc2017_64\include\QtUiTools;C:\Qt\5.11.1\msvc2017_64\include\QtWidgets;C:\Qt\5.11.1\msvc2017_64\include\QtGui;C:\Qt\5.11.1\msvc2017_64\include\QtANGLE;C:\Qt\5.11.1\msvc2017_64\include\QtCore;&quot;C:\Users\miglio\OneDrive - TXT e-solutions S.p.A\Documents\GitHub\Repository\HomeMemory\release\qmake\temp&quot;;\include;C:\Qt\5.11.1\msvc2017_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\miglio\AppData\Local\Temp\0hyca035.1z1;C:\Qt\5.11.1\msvc2017_64\include;C:\Qt\5.11.1\msvc2017_64\include\QtUiTools;C:\Qt\5.11.1\msvc2017_64\include\QtWidgets;C:\Qt\5.11.1\msvc2017_64\include\QtGui;C:\Qt\5.11.1\msvc2017_64\include\QtANGLE;C:\Qt\5.11.1\msvc2017_64\include\QtCore;C:\Users\miglio\AppData\Local\Temp\0hyca035.1z1;\include;C:\Qt\5.11.1\msvc2017_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding %(AdditionalOptions)</AdditionalOptions>
       <AssemblerListingLocation>.\</AssemblerListingLocation>
       <BrowseInformation>false</BrowseInformation>

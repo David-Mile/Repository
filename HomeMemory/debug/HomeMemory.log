@@ -1,11 +1,2 @@
-﻿  Generate moc_predefs.h
-  ambienti.cpp
-  libuni.cpp
-  main.cpp
-  openspace.cpp
-  wcasa.cpp
-  moc_ambienti.cpp
-  moc_libuni.cpp
-  moc_openspace.cpp
-  moc_wcasa.cpp
+﻿  wcasa.cpp
   HomeMemory.vcxproj -> C:\Users\miglio\OneDrive - TXT e-solutions S.p.A\Documents\GitHub\Repository\HomeMemory\debug\HomeMemory.exe

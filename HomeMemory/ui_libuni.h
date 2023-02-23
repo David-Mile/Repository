@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'libuni.ui'
 **
-** Created by: Qt User Interface Compiler version 5.11.1
+** Created by: Qt User Interface Compiler version 6.3.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -24,10 +24,10 @@ public:
     void setupUi(QWidget *LibUni)
     {
         if (LibUni->objectName().isEmpty())
-            LibUni->setObjectName(QStringLiteral("LibUni"));
+            LibUni->setObjectName(QString::fromUtf8("LibUni"));
         LibUni->resize(478, 391);
         Scaf1Btn = new QPushButton(LibUni);
-        Scaf1Btn->setObjectName(QStringLiteral("Scaf1Btn"));
+        Scaf1Btn->setObjectName(QString::fromUtf8("Scaf1Btn"));
         Scaf1Btn->setGeometry(QRect(130, 130, 80, 24));
 
         retranslateUi(LibUni);
@@ -37,8 +37,8 @@ public:
 
     void retranslateUi(QWidget *LibUni)
     {
-        LibUni->setWindowTitle(QApplication::translate("LibUni", "Form", nullptr));
-        Scaf1Btn->setText(QApplication::translate("LibUni", "Scaffale 1", nullptr));
+        LibUni->setWindowTitle(QCoreApplication::translate("LibUni", "Form", nullptr));
+        Scaf1Btn->setText(QCoreApplication::translate("LibUni", "Scaffale 1", nullptr));
     } // retranslateUi
 
 };

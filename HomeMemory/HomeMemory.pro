@@ -1,5 +1,4 @@
-QT       += core gui
-QT       += uitools
+QT       += core gui uitools
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -11,23 +10,20 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    libuni.cpp \
     main.cpp \
     ambienti.cpp \
-    openspace.cpp \
     wcasa.cpp
 
 HEADERS += \
     ambienti.h \
-    libuni.h \
-    openspace.h \
     wcasa.h
+
+RESOURCES += \
+homememory.qrc
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
-FORMS += \
-    libuni.ui \
-    openspace.ui
+FORMS +=

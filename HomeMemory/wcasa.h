@@ -18,8 +18,8 @@ public:
     explicit Wcasa(QWidget *parent = nullptr);
     ~Wcasa();
 
-private slots:
-    void setstack(QStackedLayout *stack, int index);
+public slots:
+    void setstack(QWidget *widget,QStackedLayout *stack);
 
 private:
     Ui::Wcasa *ui;

@@ -21,8 +21,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_Wcasa_t {
-    QByteArrayData data[6];
-    char stringdata0[44];
+    QByteArrayData data[7];
+    char stringdata0[54];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -34,13 +34,14 @@ static const qt_meta_stringdata_Wcasa_t qt_meta_stringdata_Wcasa = {
 QT_MOC_LITERAL(0, 0, 5), // "Wcasa"
 QT_MOC_LITERAL(1, 6, 8), // "setstack"
 QT_MOC_LITERAL(2, 15, 0), // ""
-QT_MOC_LITERAL(3, 16, 15), // "QStackedLayout*"
-QT_MOC_LITERAL(4, 32, 5), // "stack"
-QT_MOC_LITERAL(5, 38, 5) // "index"
+QT_MOC_LITERAL(3, 16, 8), // "QWidget*"
+QT_MOC_LITERAL(4, 25, 6), // "widget"
+QT_MOC_LITERAL(5, 32, 15), // "QStackedLayout*"
+QT_MOC_LITERAL(6, 48, 5) // "stack"
 
     },
-    "Wcasa\0setstack\0\0QStackedLayout*\0stack\0"
-    "index"
+    "Wcasa\0setstack\0\0QWidget*\0widget\0"
+    "QStackedLayout*\0stack"
 };
 #undef QT_MOC_LITERAL
 
@@ -61,7 +62,7 @@ static const uint qt_meta_data_Wcasa[] = {
        1,    2,   19,    2, 0x08 /* Private */,
 
  // slots: parameters
-    QMetaType::Void, 0x80000000 | 3, QMetaType::Int,    4,    5,
+    QMetaType::Void, 0x80000000 | 3, 0x80000000 | 5,    4,    6,
 
        0        // eod
 };
@@ -72,7 +73,7 @@ void Wcasa::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void 
         Wcasa *_t = static_cast<Wcasa *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->setstack((*reinterpret_cast< QStackedLayout*(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
+        case 0: _t->setstack((*reinterpret_cast< QWidget*(*)>(_a[1])),(*reinterpret_cast< QStackedLayout*(*)>(_a[2]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
@@ -81,8 +82,10 @@ void Wcasa::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void 
         case 0:
             switch (*reinterpret_cast<int*>(_a[1])) {
             default: *reinterpret_cast<int*>(_a[0]) = -1; break;
-            case 0:
+            case 1:
                 *reinterpret_cast<int*>(_a[0]) = qRegisterMetaType< QStackedLayout* >(); break;
+            case 0:
+                *reinterpret_cast<int*>(_a[0]) = qRegisterMetaType< QWidget* >(); break;
             }
             break;
         }

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'openspace.ui'
 **
-** Created by: Qt User Interface Compiler version 5.11.1
+** Created by: Qt User Interface Compiler version 6.3.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -24,10 +24,10 @@ public:
     void setupUi(QWidget *OpenSpace)
     {
         if (OpenSpace->objectName().isEmpty())
-            OpenSpace->setObjectName(QStringLiteral("OpenSpace"));
+            OpenSpace->setObjectName(QString::fromUtf8("OpenSpace"));
         OpenSpace->resize(1800, 9004);
         libUniBtn = new QPushButton(OpenSpace);
-        libUniBtn->setObjectName(QStringLiteral("libUniBtn"));
+        libUniBtn->setObjectName(QString::fromUtf8("libUniBtn"));
         libUniBtn->setGeometry(QRect(170, 110, 80, 24));
 
         retranslateUi(OpenSpace);
@@ -37,8 +37,8 @@ public:
 
     void retranslateUi(QWidget *OpenSpace)
     {
-        OpenSpace->setWindowTitle(QApplication::translate("OpenSpace", "Form", nullptr));
-        libUniBtn->setText(QApplication::translate("OpenSpace", "Libreria Uni", nullptr));
+        OpenSpace->setWindowTitle(QCoreApplication::translate("OpenSpace", "Form", nullptr));
+        libUniBtn->setText(QCoreApplication::translate("OpenSpace", "Libreria Uni", nullptr));
     } // retranslateUi
 
 };
