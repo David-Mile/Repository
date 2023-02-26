@@ -1,8 +1,0 @@
-<RCC>
-    <qresource prefix="/HomeMemory"/>
-    <qresource prefix="/">
-        <file>forms/libuni.ui</file>
-        <file>forms/openspace.ui</file>
-        <file>forms/logo.ui</file>
-    </qresource>
-</RCC>

@@ -3,28 +3,24 @@
 
 #include <QWidget>
 #include <QStackedLayout>
-#include <libuni.h>
-#include <openspace.h>
 
-namespace Ui {
-class Wcasa;
-}
+#include "wopenspace.h"
+#include "wlibuni.h"
 
-class Wcasa : public QWidget
+class WCasa : public QWidget
 {
     Q_OBJECT
-
 public:
-    explicit Wcasa(QWidget *parent = nullptr);
-    ~Wcasa();
+    explicit WCasa(QWidget *parent = nullptr);
 
-public slots:
-    void setstack(QWidget *widget,QStackedLayout *stack);
+private slots:
+    void libuniSignalIn();
 
 private:
-    Ui::Wcasa *ui;
-    LibUni *libuni;
-    OpenSpace *openspace;
+    QStackedLayout *stack;
+    WOpenSpace *openspace;
+    WLibUni *libuni;
+
 };
 
 #endif // WCASA_H

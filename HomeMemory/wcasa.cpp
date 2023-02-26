@@ -1,57 +1,24 @@
 #include "wcasa.h"
+#include "wopenspace.h"
+#include "wlibuni.h"
+
 #include <QStackedLayout>
-//#include <openspace.h>
-//#include <libuni.h>
-#include <QtUiTools>
+#include <QLabel>
 
-
-static QWidget *loadUiOpenSpace(QWidget *parent)
+WCasa::WCasa(QWidget *parent)
+    : QWidget{parent}
 {
-    QFile file(":/forms/openspace.ui");
-    file.open(QIODevice::ReadWrite);
+    stack = new QStackedLayout(this);
+    openspace = new WOpenSpace(this);
+    libuni = new WLibUni(this);
+    stack->insertWidget(1,openspace);
+    stack->insertWidget(2,libuni);
+    resize(1900,967);
 
-    QUiLoader loader;
-    return loader.load(&file, parent);
+    connect(openspace,SIGNAL(libuniSignal()),this,SLOT(libuniSignalIn()));
 }
 
-static QWidget *loadUiLibUni(QWidget *parent)
+void WCasa::libuniSignalIn()
 {
-    QFile file(":/forms/libuni.ui");
-    file.open(QIODevice::ReadWrite);
-
-    QUiLoader loader;
-    return loader.load(&file, parent);
+    stack->setCurrentWidget(libuni);
 }
-
-Wcasa::Wcasa(QWidget *parent) :
-    QWidget(parent)
-    
-{
-
-    QWidget *openspace = loadUiOpenSpace(this);
-    QWidget *libuni = loadUiLibUni(this);
-
-    QStackedLayout *stack = new QStackedLayout(this);
-    stack->insertWidget(0,openspace);
-    stack->insertWidget(1,libuni);
-    //stack->setCurrentWidget(libuni);
-
-    QPushButton *ui_libUniBtn = findChild<QPushButton*>("libUniBtn");
-    //QMetaObject::connectSlotsByName(openspace);
-    connect(ui_libUniBtn,SIGNAL(clicked()),this,SLOT(setstack(libuni,stack)));
-    //connect(libuni->findChild<QPushButton*>("scaf1Btn"),SIGNAL(released()),this,SLOT(setstack(openspace,stack)));
-
-
-}
-
-Wcasa::~Wcasa()
-{
-}
-
-
-void Wcasa::setstack(QWidget *widget, QStackedLayout *stack)
-{
-    stack->setCurrentWidget(widget);
-}
-
-
