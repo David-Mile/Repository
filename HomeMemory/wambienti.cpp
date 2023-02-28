@@ -1,4 +1,4 @@
-    #include "wambienti.h"
+#include "wambienti.h"
 #include "wcasa.h"
 #include "wlogo.h"
 

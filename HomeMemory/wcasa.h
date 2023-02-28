@@ -4,7 +4,7 @@
 #include <QWidget>
 #include <QStackedLayout>
 
-#include "wopenspace.h"
+#include "wsottoambienti.h"
 #include "wlibuni.h"
 
 class WCasa : public QWidget
@@ -18,7 +18,7 @@ private slots:
 
 private:
     QStackedLayout *stack;
-    WOpenSpace *openspace;
+    WSottoAmbienti *sottoambienti;
     WLibUni *libuni;
 
 };

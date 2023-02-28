@@ -15,7 +15,9 @@ SOURCES += \
     wcasa.cpp \
     wlibuni.cpp \
     wlogo.cpp \
-    wopenspace.cpp
+    wopenspace.cpp \
+    wsottoambienti.cpp \
+    wsovraposizioni.cpp
 
 HEADERS += \
     mainwindow.h \
@@ -23,7 +25,9 @@ HEADERS += \
     wcasa.h \
     wlibuni.h \
     wlogo.h \
-    wopenspace.h
+    wopenspace.h \
+    wsottoambienti.h \
+    wsovraposizioni.h
 
 FORMS += \
     wlibuni.ui \
