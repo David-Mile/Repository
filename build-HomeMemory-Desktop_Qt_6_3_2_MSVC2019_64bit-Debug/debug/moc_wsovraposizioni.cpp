@@ -21,53 +21,95 @@
 QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
-struct qt_meta_stringdata_wsovraposizioni_t {
-    uint offsetsAndSizes[2];
+struct qt_meta_stringdata_WSovraPosizioni_t {
+    uint offsetsAndSizes[10];
     char stringdata0[16];
+    char stringdata1[13];
+    char stringdata2[1];
+    char stringdata3[10];
+    char stringdata4[14];
 };
 #define QT_MOC_LITERAL(ofs, len) \
-    uint(sizeof(qt_meta_stringdata_wsovraposizioni_t::offsetsAndSizes) + ofs), len 
-static const qt_meta_stringdata_wsovraposizioni_t qt_meta_stringdata_wsovraposizioni = {
+    uint(sizeof(qt_meta_stringdata_WSovraPosizioni_t::offsetsAndSizes) + ofs), len 
+static const qt_meta_stringdata_WSovraPosizioni_t qt_meta_stringdata_WSovraPosizioni = {
     {
-        QT_MOC_LITERAL(0, 15)   // "wsovraposizioni"
+        QT_MOC_LITERAL(0, 15),  // "WSovraPosizioni"
+        QT_MOC_LITERAL(16, 12),  // "libuniSignal"
+        QT_MOC_LITERAL(29, 0),  // ""
+        QT_MOC_LITERAL(30, 9),  // "setLibUni"
+        QT_MOC_LITERAL(40, 13)   // "libuniEmitter"
     },
-    "wsovraposizioni"
+    "WSovraPosizioni",
+    "libuniSignal",
+    "",
+    "setLibUni",
+    "libuniEmitter"
 };
 #undef QT_MOC_LITERAL
 
-static const uint qt_meta_data_wsovraposizioni[] = {
+static const uint qt_meta_data_WSovraPosizioni[] = {
 
  // content:
       10,       // revision
        0,       // classname
        0,    0, // classinfo
-       0,    0, // methods
+       3,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       0,       // signalCount
+       1,       // signalCount
+
+ // signals: name, argc, parameters, tag, flags, initial metatype offsets
+       1,    0,   32,    2, 0x06,    1 /* Public */,
+
+ // slots: name, argc, parameters, tag, flags, initial metatype offsets
+       3,    0,   33,    2, 0x08,    2 /* Private */,
+       4,    0,   34,    2, 0x08,    3 /* Private */,
+
+ // signals: parameters
+    QMetaType::Void,
+
+ // slots: parameters
+    QMetaType::Void,
+    QMetaType::Void,
 
        0        // eod
 };
 
-void wsovraposizioni::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void WSovraPosizioni::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
-    (void)_o;
-    (void)_id;
-    (void)_c;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        auto *_t = static_cast<WSovraPosizioni *>(_o);
+        (void)_t;
+        switch (_id) {
+        case 0: _t->libuniSignal(); break;
+        case 1: _t->setLibUni(); break;
+        case 2: _t->libuniEmitter(); break;
+        default: ;
+        }
+    } else if (_c == QMetaObject::IndexOfMethod) {
+        int *result = reinterpret_cast<int *>(_a[0]);
+        {
+            using _t = void (WSovraPosizioni::*)();
+            if (_t _q_method = &WSovraPosizioni::libuniSignal; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+                *result = 0;
+                return;
+            }
+        }
+    }
     (void)_a;
 }
 
-const QMetaObject wsovraposizioni::staticMetaObject = { {
+const QMetaObject WSovraPosizioni::staticMetaObject = { {
     QMetaObject::SuperData::link<QWidget::staticMetaObject>(),
-    qt_meta_stringdata_wsovraposizioni.offsetsAndSizes,
-    qt_meta_data_wsovraposizioni,
+    qt_meta_stringdata_WSovraPosizioni.offsetsAndSizes,
+    qt_meta_data_WSovraPosizioni,
     qt_static_metacall,
     nullptr,
-qt_incomplete_metaTypeArray<qt_meta_stringdata_wsovraposizioni_t
-, QtPrivate::TypeAndForceComplete<wsovraposizioni, std::true_type>
-
+qt_incomplete_metaTypeArray<qt_meta_stringdata_WSovraPosizioni_t
+, QtPrivate::TypeAndForceComplete<WSovraPosizioni, std::true_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>
+, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>
 
 
 >,
@@ -75,23 +117,40 @@ qt_incomplete_metaTypeArray<qt_meta_stringdata_wsovraposizioni_t
 } };
 
 
-const QMetaObject *wsovraposizioni::metaObject() const
+const QMetaObject *WSovraPosizioni::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *wsovraposizioni::qt_metacast(const char *_clname)
+void *WSovraPosizioni::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_wsovraposizioni.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_WSovraPosizioni.stringdata0))
         return static_cast<void*>(this);
     return QWidget::qt_metacast(_clname);
 }
 
-int wsovraposizioni::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int WSovraPosizioni::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QWidget::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 3)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 3;
+    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        if (_id < 3)
+            *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
+        _id -= 3;
+    }
     return _id;
+}
+
+// SIGNAL 0
+void WSovraPosizioni::libuniSignal()
+{
+    QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
 }
 QT_WARNING_POP
 QT_END_MOC_NAMESPACE

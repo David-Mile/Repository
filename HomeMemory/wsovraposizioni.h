@@ -1,15 +1,30 @@
 #ifndef WSOVRAPOSIZIONI_H
 #define WSOVRAPOSIZIONI_H
 
-#include <QWidget>
+#include "wlibuni.h"
+#include "wlogo.h"
 
-class wsovraposizioni : public QWidget
+#include <QWidget>
+#include <QStackedLayout>
+
+class WSovraPosizioni : public QWidget
 {
     Q_OBJECT
 public:
-    explicit wsovraposizioni(QWidget *parent = nullptr);
+    explicit WSovraPosizioni(QWidget *parent = nullptr);
+
+private slots:
+    void setLibUni();
+    void libuniEmitter();
 
 signals:
+    void libuniSignal();
+
+private:
+    QStackedLayout *stack;
+    WLibUni *libuni;
+    WLogo *logo;
+
 
 };
 

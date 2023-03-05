@@ -5,7 +5,7 @@
 #include <QStackedLayout>
 
 #include "wsottoambienti.h"
-#include "wlibuni.h"
+#include "wsovraposizioni.h"
 
 class WCasa : public QWidget
 {
@@ -16,10 +16,14 @@ public:
 private slots:
     void libuniSignalIn();
 
+signals:
+    void libuniSignal();
+
+
 private:
     QStackedLayout *stack;
     WSottoAmbienti *sottoambienti;
-    WLibUni *libuni;
+    WSovraPosizioni *sovraposizioni;
 
 };
 
